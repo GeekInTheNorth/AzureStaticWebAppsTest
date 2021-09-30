@@ -13,7 +13,7 @@ namespace SalaryCalculation.Function
     public static class FunctionTwo
     {
         [FunctionName("FunctionTwo")]
-        public void Run([TimerTrigger("* /5 * * * *")]TimerInfo myTimer, ILogger log)
+        public static void Run([TimerTrigger("* /5 * * * *")]TimerInfo myTimer, ILogger log)
         {
             try
             {
